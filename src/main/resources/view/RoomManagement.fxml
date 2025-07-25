@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="598.0" prefWidth="863.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RoomManagementController">
+   <children>
+      <JFXTextField fx:id="txtRoomNumber" layoutX="29.0" layoutY="54.0" promptText="roomNumber" />
+      <JFXComboBox fx:id="comboRoomType" layoutX="226.0" layoutY="67.0" prefHeight="14.0" prefWidth="150.0" promptText="comboRoomType" />
+      <JFXTextField fx:id="txtCapacity" layoutX="413.0" layoutY="67.0" promptText="txtCapacity" />
+      <JFXTextField fx:id="txtFloorNumber" layoutX="586.0" layoutY="68.0" promptText="txtFloorNumber" />
+      <JFXTextField fx:id="txtDailyRate" layoutX="29.0" layoutY="139.0" promptText="txtDailyRate" />
+      <JFXComboBox fx:id="comboStatus" layoutX="226.0" layoutY="152.0" prefHeight="26.0" prefWidth="150.0" promptText="comboStatus" />
+      <JFXTextArea fx:id="txtAmenities" layoutX="401.0" layoutY="137.0" prefHeight="54.0" prefWidth="193.0" promptText="txtAmenities" />
+      <DatePicker fx:id="datePicker" layoutX="646.0" layoutY="165.0" />
+      <JFXButton layoutX="446.0" layoutY="225.0" onAction="#btnOnAddAction" text="Add" />
+      <JFXButton layoutX="513.0" layoutY="225.0" onAction="#btnOnUpdateAction" text="Update" />
+      <JFXButton layoutX="592.0" layoutY="225.0" onAction="#btnOnSearchAction" text="Search" />
+      <JFXButton layoutX="676.0" layoutY="225.0" onAction="#btnOnDeleteAction" text="Delete" />
+      <TableView fx:id="tblRooms" layoutX="26.0" layoutY="296.0" prefHeight="242.0" prefWidth="798.0">
+        <columns>
+          <TableColumn fx:id="colRoomId" prefWidth="75.0" text="room_Id" />
+          <TableColumn fx:id="colRoomNumber" prefWidth="75.0" text="room number" />
+            <TableColumn fx:id="colRoomType" prefWidth="75.0" text="room type" />
+            <TableColumn fx:id="colCapacity" prefWidth="75.0" text="capacity" />
+            <TableColumn fx:id="colFloorNumber" prefWidth="75.0" text="floor number" />
+            <TableColumn fx:id="colDailyRate" prefWidth="75.0" text="daily rate" />
+            <TableColumn fx:id="colStatus" prefWidth="75.0" text="status" />
+            <TableColumn fx:id="colAmenities" prefWidth="75.0" text="amenities" />
+            <TableColumn fx:id="colDate" prefWidth="75.0" text="date" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="726.0" layoutY="550.0" onAction="#btnOnActionReload" text="Reload" />
+   </children>
+</AnchorPane>

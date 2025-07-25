@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="625.0" prefWidth="857.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RoomAllocationController">
+   <children>
+      <JFXComboBox fx:id="PatientCombo" layoutX="24.0" layoutY="63.0" prefHeight="26.0" prefWidth="135.0" promptText="patinent Name" />
+      <DatePicker fx:id="AdmitDate" layoutX="362.0" layoutY="76.0" promptText="Admitted date  " />
+      <DatePicker fx:id="DischargeDate" layoutX="560.0" layoutY="76.0" promptText="discharge  date " />
+      <JFXComboBox fx:id="comboStatus" layoutX="24.0" layoutY="143.0" prefHeight="26.0" prefWidth="150.0" promptText="comboStatus" />
+      <TextArea fx:id="txtNotes" layoutX="189.0" layoutY="122.0" prefHeight="81.0" prefWidth="213.0" promptText="Notes " />
+      <JFXComboBox fx:id="DoctorCombo" layoutX="422.0" layoutY="149.0" prefHeight="26.0" prefWidth="114.0" promptText="Doctor Name" />
+      <TextField fx:id="txtTotalDays" layoutX="560.0" layoutY="150.0" promptText="total days " />
+      <TextField fx:id="txtTotalCost" layoutX="24.0" layoutY="230.0" promptText="total cost" />
+      <JFXButton layoutX="386.0" layoutY="230.0" onAction="#btnOnAddAction" text="Add" />
+      <JFXButton layoutX="453.0" layoutY="230.0" onAction="#btnOnUpdateAction" text="Update" />
+      <JFXButton layoutX="532.0" layoutY="230.0" onAction="#btnOnSearchAction" text="Search" />
+      <JFXButton layoutX="616.0" layoutY="230.0" onAction="#btnOnDeleteAction" text="Delete" />
+      <JFXButton layoutX="763.0" layoutY="576.0" onAction="#btnOnActionReload" text="Reload" />
+      <TableView fx:id="tblRoomAllocation" layoutX="20.0" layoutY="292.0" prefHeight="257.0" prefWidth="822.0">
+        <columns>
+          <TableColumn fx:id="colAllocationId" prefWidth="75.0" text="Allocation_id" />
+          <TableColumn fx:id="colPatientName" prefWidth="75.0" text="patient name" />
+            <TableColumn fx:id="colRoomNumber" prefWidth="75.0" text="room number" />
+            <TableColumn fx:id="colAdmittedDate" prefWidth="75.0" text="admitted date" />
+            <TableColumn fx:id="colDischargeDate" prefWidth="75.0" text="discharge date" />
+            <TableColumn fx:id="colStatus" prefWidth="75.0" text="status" />
+            <TableColumn fx:id="colNotes" prefWidth="75.0" text="notes" />
+            <TableColumn fx:id="colAllocatorName" prefWidth="75.0" text="allocater name" />
+            <TableColumn fx:id="colTotalDays" prefWidth="75.0" text="total days" />
+            <TableColumn fx:id="colTotalCost" prefWidth="75.0" text="total cost" />
+        </columns>
+      </TableView>
+      <JFXComboBox fx:id="ComboRoomNumber" layoutX="189.0" layoutY="64.0" prefHeight="26.0" prefWidth="135.0" promptText="Room Number" />
+   </children>
+</AnchorPane>

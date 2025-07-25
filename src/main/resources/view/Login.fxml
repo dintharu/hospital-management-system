@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="585.0" prefWidth="772.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.loginController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="518.0" layoutX="401.0" layoutY="33.0" stroke="#f7f1f1" strokeType="INSIDE" strokeWidth="0.0" width="346.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.7263257575757576" startX="0.18276515151515133" startY="0.5672348484848484">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9037036895751953" green="0.9069135785102844" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#056bc4" height="31.0" layoutX="457.0" layoutY="407.0" stroke="BLACK" strokeType="INSIDE" width="262.0" />
+      <JFXTextField fx:id="txtUserName" layoutX="463.0" layoutY="203.0" prefHeight="44.0" prefWidth="255.0" promptText="User Name">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPassword" layoutX="463.0" layoutY="308.0" prefHeight="44.0" prefWidth="255.0" promptText="Password">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="537.0" layoutY="402.0" onAction="#btnSignInOnAction" text="Sign In" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="375.0" fitWidth="250.0" layoutX="73.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/doc 3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="175.0" fitWidth="252.0" layoutX="73.0" layoutY="391.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/purpose.jpg" />
+         </image>
+      </ImageView>
+      <Separator layoutX="379.0" layoutY="14.0" orientation="VERTICAL" prefHeight="524.0" prefWidth="0.0" />
+      <ImageView fitHeight="44.0" fitWidth="36.0" layoutX="419.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="45.0" layoutY="-61.0" text="Label" />
+      <Label layoutX="462.0" layoutY="74.0" prefHeight="31.0" prefWidth="77.0" text="Invision" textFill="#133ad9">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="462.0" layoutY="124.0" text="Login">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="627.0" layoutY="366.0" text="Forgot Password?" textFill="#4a71c7">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="458.0" layoutY="454.0" text="Don't have an account?" textFill="#1e1c1c">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="588.0" layoutY="453.0" text="Sign Up" textFill="#114bec">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

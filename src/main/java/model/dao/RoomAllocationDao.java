@@ -1,0 +1,26 @@
+package model.dao;
+
+import lombok.*;
+
+import java.time.LocalDate;
+
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+public class RoomAllocationDao {
+
+    private Integer allocationId;
+    private String patinetName;
+    private Integer roomNumber;
+    private LocalDate admissionDate;
+    private LocalDate dischargeDate;
+    private String status;
+    private String notes;
+    private String allocatedBy;
+    private int totalDays;
+    private Double totalCost;
+
+
+}

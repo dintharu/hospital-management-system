@@ -1,0 +1,123 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="Prescription" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e4c58e19-cbad-46ae-92c3-9823b39ed77e">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+	<query language="SQL"><![CDATA[SELECT * FROM prescription]]></query>
+	<field name="prescription_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="prescription_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="prescription_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="prescription"/>
+	</field>
+	<field name="patient_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="patient_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="patient_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="prescription"/>
+	</field>
+	<field name="doctor_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="doctor_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="doctor_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="prescription"/>
+	</field>
+	<field name="medicine" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="medicine"/>
+		<property name="com.jaspersoft.studio.field.label" value="medicine"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="prescription"/>
+	</field>
+	<field name="dosage" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="dosage"/>
+		<property name="com.jaspersoft.studio.field.label" value="dosage"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="prescription"/>
+	</field>
+	<field name="duration" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="duration"/>
+		<property name="com.jaspersoft.studio.field.label" value="duration"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="prescription"/>
+	</field>
+	<background splitType="Stretch"/>
+	<title height="114" splitType="Stretch">
+		<element kind="staticText" uuid="e323e881-7a35-44b3-8387-fb8500018b72" x="130" y="10" width="250" height="70" fontSize="22.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[Patient - Prescription -Details]]></text>
+		</element>
+		<element kind="textField" uuid="058132c1-6251-4b9d-a455-5c3efb834fc4" x="447" y="9" width="120" height="30" fontSize="12.0" pattern="MMMMM dd, yyyy" bold="true">
+			<expression><![CDATA[new java.util.Date()]]></expression>
+		</element>
+		<element kind="textField" uuid="e7a40d9b-c676-444b-b37b-26da0e489e3d" x="448" y="40" width="119" height="30" fontSize="12.0" pattern="HH:mm" bold="true">
+			<expression><![CDATA[new java.util.Date()]]></expression>
+		</element>
+		<element kind="image" uuid="47a713f1-ac06-41d1-8228-61b54ee87585" x="9" y="1" width="50" height="50">
+			<expression><![CDATA["C:/Users/LENOVO/ICD114/Standalone application development/Hospital-Management-System/src/main/resources/images/logo.jpg"]]></expression>
+		</element>
+		<element kind="staticText" uuid="25c8d055-7f21-4f8e-b0d2-fae877a0494d" x="7" y="46" width="100" height="30" forecolor="#0A0A0A" backcolor="#FFFFFF" fontSize="12.0">
+			<text><![CDATA[Invision]]></text>
+		</element>
+	</title>
+	<pageHeader height="49" splitType="Stretch">
+		<element kind="staticText" uuid="16c9ddc5-c109-4b50-bb0c-94938f478dcd" x="180" y="10" width="243" height="21" fontSize="14.0">
+			<text><![CDATA[No 12, A,Galle Road, Panadura]]></text>
+		</element>
+	</pageHeader>
+	<columnHeader height="45" splitType="Stretch">
+		<element kind="staticText" uuid="7b129581-42a4-4e1c-b99d-b62fbfea3ec5" x="2" y="0" width="95" height="30" hTextAlign="Center">
+			<text><![CDATA[prescription_id]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="20ebb6b0-268d-448a-b1fe-bca5a22aafd7"/>
+		</element>
+		<element kind="staticText" uuid="6f7c55b8-7aef-40b6-b23f-534cb55b6304" x="97" y="0" width="92" height="30" hTextAlign="Center">
+			<text><![CDATA[patient_id]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5f25f9ea-a554-41fd-885e-58b9d0338296"/>
+		</element>
+		<element kind="staticText" uuid="22c86cf9-034a-440f-95af-ca38fd7a40c8" x="189" y="0" width="92" height="30" hTextAlign="Center">
+			<text><![CDATA[doctor_id]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1e2f7ab9-84c2-46b8-9db5-ff28ac32b8d9"/>
+		</element>
+		<element kind="staticText" uuid="4ab495a9-c85c-4a48-8761-1a07d80330a8" x="281" y="0" width="92" height="30" hTextAlign="Center">
+			<text><![CDATA[medicine]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="71f147a9-ac9f-4bca-98f3-a888c15f7cd4"/>
+		</element>
+		<element kind="staticText" uuid="f81dc6b1-4520-4be8-99df-148fff6d1c01" x="373" y="0" width="92" height="30" hTextAlign="Center">
+			<text><![CDATA[dosage]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd30a2dc-f22a-45e0-bd0a-888e0e8781ed"/>
+		</element>
+		<element kind="staticText" uuid="ef52b313-0ebe-4613-b8fb-7044c625dc84" x="465" y="0" width="92" height="30" hTextAlign="Center">
+			<text><![CDATA[duration]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d3e94b8a-4313-4181-9f15-d80eb63ce86d"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="46" splitType="Stretch">
+			<element kind="textField" uuid="3f3004d7-3e65-442e-88b9-2f489289569f" x="2" y="0" width="95" height="30" hTextAlign="Center">
+				<expression><![CDATA[$F{prescription_id}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="20ebb6b0-268d-448a-b1fe-bca5a22aafd7"/>
+			</element>
+			<element kind="textField" uuid="cdd8810a-49c8-43ad-8053-b8dcf41043d8" x="97" y="0" width="92" height="30" hTextAlign="Center">
+				<expression><![CDATA[$F{patient_id}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5f25f9ea-a554-41fd-885e-58b9d0338296"/>
+			</element>
+			<element kind="textField" uuid="938f72ca-3705-42b1-a1b3-3836bc3c65c1" x="189" y="0" width="92" height="30" hTextAlign="Center">
+				<expression><![CDATA[$F{doctor_id}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1e2f7ab9-84c2-46b8-9db5-ff28ac32b8d9"/>
+			</element>
+			<element kind="textField" uuid="f2b8dcd7-e730-4eba-8e76-2c43da80e654" x="281" y="0" width="92" height="30" hTextAlign="Center">
+				<expression><![CDATA[$F{medicine}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="71f147a9-ac9f-4bca-98f3-a888c15f7cd4"/>
+			</element>
+			<element kind="textField" uuid="81a45342-475f-4375-843c-825cb4a42ae8" x="373" y="0" width="92" height="30" hTextAlign="Center">
+				<expression><![CDATA[$F{dosage}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd30a2dc-f22a-45e0-bd0a-888e0e8781ed"/>
+			</element>
+			<element kind="textField" uuid="8064d646-8b72-43f7-95a9-eb8db1623f46" x="465" y="0" width="92" height="30" hTextAlign="Center">
+				<expression><![CDATA[$F{duration}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d3e94b8a-4313-4181-9f15-d80eb63ce86d"/>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="70" splitType="Stretch">
+		<element kind="staticText" uuid="ee752319-52c0-4fe0-876d-a1687cf55534" x="200" y="20" width="143" height="30" fontSize="19.0" bold="true">
+			<text><![CDATA[_Thank You_]]></text>
+		</element>
+		<element kind="textField" uuid="a520c234-d933-4b16-928e-925c9d63b172" x="510" y="40" width="170" height="30" fontSize="12.0" bold="true">
+			<expression><![CDATA[$V{PAGE_NUMBER}]]></expression>
+		</element>
+	</pageFooter>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>

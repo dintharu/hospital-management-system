@@ -1,4 +1,4 @@
-package model;
+package model.dto;
 
 
 import lombok.*;
@@ -14,7 +14,7 @@ public class Patient {
     private String name;
     private int age;
     private String gender;
-    private int contact;
-    private int imergencyContact;
+    private String contact;
+    private String imergencyContact;
     private String medicalHistory;
 }

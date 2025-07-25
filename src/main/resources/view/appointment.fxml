@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="530.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.appointmentController">
+   <children>
+      <ComboBox fx:id="patientCombo" layoutX="25.0" layoutY="58.0" prefWidth="150.0" />
+      <ComboBox fx:id="doctorCombo" layoutX="231.0" layoutY="58.0" prefWidth="150.0" />
+      <JFXButton layoutX="372.0" layoutY="180.0" onAction="#btnOnActionBook" text="Book" />
+
+      <JFXButton layoutX="445.0" layoutY="180.0" onAction="#btnOnActionSearch" text="search" />
+      <JFXButton layoutX="531.0" layoutY="183.0" onAction="#btnOnActionUpdate" text="update" />
+      <JFXButton layoutX="615.0" layoutY="180.0" onAction="#btnOnActionCancel" text="cancel" />
+      <TableView fx:id="tblAppointments" layoutX="137.0" layoutY="236.0" prefHeight="222.0" prefWidth="590.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="60.00000190734863" text="id" />
+            <TableColumn fx:id="colPatientName" prefWidth="117.60003662109375" text="Patient_name" />
+            <TableColumn fx:id="colDoctorName" prefWidth="98.39996337890625" text="Doctor_name" />
+            <TableColumn fx:id="colDate" prefWidth="120.79998779296875" text="Date" />
+            <TableColumn fx:id="colTime" prefWidth="115.20001220703125" text="Time" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="653.0" layoutY="475.0" onAction="#btnOnActionReload" text="Reload" />
+      <Spinner fx:id="startTime" layoutX="547.0" layoutY="129.0" prefHeight="18.0" prefWidth="51.0" />
+      <JFXComboBox fx:id="StartMeridiem" layoutX="606.0" layoutY="129.0" prefHeight="26.0" prefWidth="51.0" />
+      <Spinner fx:id="endTime" layoutX="694.0" layoutY="132.0" prefHeight="18.0" prefWidth="51.0" />
+      <JFXComboBox fx:id="endMeridiem" layoutX="753.0" layoutY="132.0" prefHeight="26.0" prefWidth="51.0" />
+      <Separator layoutX="667.0" layoutY="145.0" prefHeight="3.0" prefWidth="12.0" style="-fx-background-color: black;" />
+      <JFXComboBox fx:id="ComboWeekDays" layoutX="442.0" layoutY="58.0" prefHeight="26.0" prefWidth="172.0" />
+   </children>
+</AnchorPane>
